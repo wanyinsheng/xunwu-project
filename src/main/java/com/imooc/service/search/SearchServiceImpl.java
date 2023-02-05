@@ -358,7 +358,7 @@ public class SearchServiceImpl implements ISearchService {
                 QueryBuilders.termQuery(HouseIndexKey.RENT_WAY, rentSearch.getRentWay())
             );
         }
-
+        //设置权重，对TITLE
 //        boolQuery.must(
 //                QueryBuilders.matchQuery(HouseIndexKey.TITLE, rentSearch.getKeywords())
 //                        .boost(2.0f)
